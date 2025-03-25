@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wall -Wextra -Werror CMakeFiles/monExe.dir/src/main.cpp.o CMakeFiles/monExe.dir/src/plateau.cpp.o -o /home/guillaume/Bureau/PMI/PMI/bin/monExe 
