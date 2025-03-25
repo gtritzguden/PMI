@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wall -Wextra CMakeFiles/monExe.dir/src/main.cpp.o CMakeFiles/monExe.dir/src/pieces.cpp.o CMakeFiles/monExe.dir/src/pion.cpp.o CMakeFiles/monExe.dir/src/plateau.cpp.o CMakeFiles/monExe.dir/src/roi.cpp.o CMakeFiles/monExe.dir/src/tour.cpp.o -o /home/guillaume/CLionProjects/PMI/bin/monExe 
