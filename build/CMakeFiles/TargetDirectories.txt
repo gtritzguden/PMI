@@ -1,3 +1,0 @@
-/home/guillaume/Bureau/PMI/PMI/build/CMakeFiles/monExe.dir
-/home/guillaume/Bureau/PMI/PMI/build/CMakeFiles/edit_cache.dir
-/home/guillaume/Bureau/PMI/PMI/build/CMakeFiles/rebuild_cache.dir

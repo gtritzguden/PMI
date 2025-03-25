@@ -9,8 +9,7 @@ private:
     int x; /* [a:h] */
     int y; /*[1:8]*/
 public:
-    pion(int x, int y);
-    void position();
-    void seDeplacer(int xf, int yf, int c); /* Vérifier que le déplacement de la pièce ne met pas en échec le roi */
-    ~pion();
+    pion(int x, int y, int c);
+    void position(int& x, int& y);
+    int seDeplacer(int xf, int yf, int c); /* Vérifier que le déplacement de la pièce ne met pas en échec le roi */
 };

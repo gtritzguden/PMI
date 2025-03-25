@@ -17,7 +17,7 @@ include_directories(${CMAKE_BINARY_DIR}/../include)
 
 # Impose la compilation en mode Debug avec certaines options supplémentaires
 set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -Wextra -Werror")
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -Wextra")
    
 # Affiche des informations relatives au compilateur qui sera utilisé pour générer les cibles
 message(STATUS "   Compiler            : ${CMAKE_CXX_COMPILER}")
