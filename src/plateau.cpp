@@ -1,31 +1,32 @@
-#include<iostream.h>
+#include<iostream>
 #include"plateau.h"
 
 
 
-plateau::plateau() //constructeur : tableau vierge
-{
-    int** plt=new int*;
+plateau::plateau(){ //constructeur : tableau vierge
+    plt = new int*[8];
     for(int i=0;i<8;i++)
     {
-          plt[i]=new int;
+      plt[i]=new int[8];
+      for(int j=0;j<8;j++) {
+        plt[i][j]=0;
+      }
     }
 }
 
-plateau::affichage(plateau& plt){
+void plateau::afficher(){
   for(int i=0;i<8;i++){
     for(int j=0;j<8;j++){
-      std::cout<<"|"<<plt[i][j]<<;
+      std::cout<<"|"<<plt[i][j];
     }
     std::cout<<"|"<<std::endl;
   }
 }
 
-plateau::~plateau() //destructeur
-{
+plateau::~plateau(){ //destructeur
   for(int i=0;i<8;i++)
   {
-    free(plt[i]);
+    delete[] plt[i];
   }
-  free(plt);
+  delete[] plt;
 }

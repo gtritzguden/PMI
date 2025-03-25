@@ -1,14 +1,14 @@
 #pragma once
-#include "pieces.h" //permet l'accès aux pièces par plateau
+//#include "pieces.h" //permet l'accès aux pièces par plateau
 
 class plateau{
-    protected:
-        int* plt;
+    private:
+        int** plt;
     public:
         plateau(); //constructeur
-        void prendrePiece(int x, int y, int c);
-        ajouterPiece(
-        void afficher(plateau& plt);
+        //void prendrePiece(int x, int y, int c);
+        //ajouterPiece(
+        void afficher();
         ~plateau();
 
 
