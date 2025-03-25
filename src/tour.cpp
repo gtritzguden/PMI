@@ -2,7 +2,7 @@
 #include "tour.h"
 
 
-tour::tour(int abs, int ord, int c) : pieces(abs, ord, 0){
+tour::tour(int abs, int ord, int c) : pieces(abs, ord, c){
     char tab[8] = {'a','b','c','d','e','f','g','h'};
     std::cout<<"La piece pion a été cree en "<<tab[x-1]<<y<<std::endl;
 }

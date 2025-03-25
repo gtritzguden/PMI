@@ -23,6 +23,13 @@ void plateau::afficher(){
   }
 }
 
+bool plateau::estOccupe(int x, int y){
+  if(plt[x][y]==1)
+    return true;
+  else
+    return false;
+}
+
 plateau::~plateau(){ //destructeur
   for(int i=0;i<8;i++)
   {
@@ -30,3 +37,4 @@ plateau::~plateau(){ //destructeur
   }
   delete[] plt;
 }
+

@@ -9,6 +9,7 @@ class plateau{
         //void prendrePiece(int x, int y, int c);
         //ajouterPiece(
         void afficher();
+		bool estOccupe(int x, int y); //renvoie true si la case est occupée, False si elel est libre
         ~plateau();
 
 

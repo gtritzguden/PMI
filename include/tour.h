@@ -5,9 +5,7 @@
 
 class tour : public pieces {
 private:
-    int couleur; /*0 pour blanc et 1 pour blanc*/
-    int x; /* [a:h] */
-    int y; /* [1:8] */
+	//rien pcq hérité de pieces
 
 public:
     tour(int x, int y,int c);

@@ -10,7 +10,7 @@ pieces::pieces(int x_,int y_,int c_) {
   couleur = c_;
 }
 
-int pieces::seDeplacer(int xf, int yf, int c) {
+int pieces::seDeplacer(int xf, int yf, int c, plateau& plt_) {
   return 0;
 }
 

@@ -4,11 +4,8 @@
 
 
 class roi : public pieces{
-private:
-    int couleur; /*0 pour blanc et 1 pour blanc*/
-    int x; /* [a:h] */
-    int y; /* [1:8] */
-
+private :
+  //rien pcq hérité de pièces
 public:
     roi(int x, int y,int c);
     void position(int& x, int& y);
