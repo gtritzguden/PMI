@@ -1,8 +1,10 @@
-//
-// Created by guill on 25/03/2025.
-//
+#pragma once
 
-#ifndef PION_H
-#define PION_H
+class  Pion{
+  private:
+    int abscisse;
+    int ordonée;
 
-#endif //PION_H
+  public:
+    Pion();
+   };
