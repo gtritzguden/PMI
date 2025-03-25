@@ -1,7 +1,7 @@
 #include "pieces.h"
 #include "roi.h"
 
-roi::roi(int abs, int ord,int c) : pieces(abs, ord, 0){
+roi::roi(int abs, int ord,int c) : pieces(abs, ord, c){
     x=abs;
     y=ord;
 
