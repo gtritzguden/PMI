@@ -8,7 +8,7 @@
 int main(){
     plateau P1;
 	P1.afficher();
-    pion p1(0,0,1,P1);
+    pion p1(0,0,-1,P1);
 	P1.afficher();
 // Test pion : fonctionne
    	P1.afficher();
