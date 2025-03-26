@@ -24,7 +24,7 @@ int pion::seDeplacer(int xf, int yf, int c, plateau& plt) {
      x=xf; //on bouge la pièce
      y=yf;
      plt.ajouterPiece(x,y,c); //on replace la pièce
-     std::cout<<"la pièce a ete déplacee en"<<x<<y<<std::endl;
+     std::cout<<"la piece a ete deplacee en"<<x<<y<<std::endl;
    }
    else
      std::cout<<"Deplacement impossible"<<std::endl;
