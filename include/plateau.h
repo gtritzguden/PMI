@@ -1,15 +1,16 @@
 #pragma once
 
 class plateau {
-    private:
-        char*** plt;
+    protected:
+        int** plt;
     public:
         plateau(); //constructeur
         //void prendrePiece(int x, int y, int c);
-        void ajouterPiece(int x, int y, int c, char t); //remplit le tableau d'occupation avec pou reconnaitre la pièce
+        void ajouterPiece(int x, int y, int c); //c designe la couleur et le type de piece
         void supprimerPiece(int x, int y); // pas bespin de couleur, on met juste 0;
-        void afficher();
+        void afficher() const;
 		bool estOccupe(int x, int y); //renvoie true si la case est occupée, False si elel est libre
+        int getElt(int x, int y) const;
         ~plateau();
 
 
