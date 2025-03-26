@@ -18,17 +18,19 @@ void pion::position(int& x_, int& y_) {
 
 }
 
-int pion::seDeplacer(int xf, int yf, int c, plateau& plt) {
+bool pion::seDeplacer(int xf, int yf, int c, plateau& plt) {
    if(reglesDeplacement(xf, yf, plt)){// ajouter la mise en échec du roi
      plt.supprimerPiece(x,y); //on supprime la pièce
      x=xf; //on bouge la pièce
      y=yf;
      plt.ajouterPiece(x,y,c,'P'); //on replace la pièce
      std::cout<<"la piece a ete deplacee en"<<x<<y<<std::endl;
+     return true;
    }
-   else
+   else{
      std::cout<<"Deplacement impossible"<<std::endl;
-   return 0;
+     return false;
+    }
 }
 
 bool pion::reglesDeplacement(int xf, int yf, plateau& plt_) { //xf et yf les abscisses finales du pion

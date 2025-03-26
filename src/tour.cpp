@@ -1,4 +1,5 @@
 #include "tour.h"
+#include "plateau.h"
 #include <iostream>
 
 
@@ -15,10 +16,26 @@ void tour::position(int& x_, int& y_) {
     std::cout<<"Le tour se trouve en "<< tab[x-1] << y <<std::endl;
 }
 
-int tour::seDeplacer(int xf, int yf, int c) {
+
+int tour::seDeplacer(int xf, int yf, int c, plateau &plt) {
     bool deplacementValide = (xf != 0 && yf == 0) || (xf == 0 && yf != 0);
 
     bool dansLesBornes = xf >= 1 && xf <= 8 && yf >= 1 && yf <= 8;
+
+    for(int i=x ; i<xf ; i++) {
+        if(plt.estOccupe(i,y)) {
+            std::cout << "Vous ne pouvez pas passer par dessus un pion, veuillez recommencer"<< std::endl;
+            return 0;
+        }
+    }
+
+    for(int k=y ; k<yf ; k++) {
+        if(plt.estOccupe(x,k)) {
+            std::cout << "Vous ne pouvez pas passer par dessus un pion, veuillez recommencer"<< std::endl;
+            return 0;
+        }
+    }
+
 
     if(!deplacementValide && !dansLesBornes) {
         std::cout<<"Ce coup est illegal aux echecs, veuillez reesayer."<<std::endl;

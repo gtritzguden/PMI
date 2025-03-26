@@ -12,7 +12,7 @@ int main(){
 	P1.afficher();
 // Test pion : fonctionne
    	P1.afficher();
-    p1.seDeplacer(0,-1,1,P1); //déplacement invalide
+    p1.seDeplacer(0,-1,1,P1); //déplacement ivalide
     p1.seDeplacer(0,1,1,P1); //déplacement valide
     p1.seDeplacer(1,1,1,P1); //déplacement invalide
     p1.seDeplacer(0,0,1,P1); //Déplacement invalide
