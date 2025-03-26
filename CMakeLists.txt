@@ -35,5 +35,7 @@ file(
 add_executable(
    monExe
    ${srcFiles}
+        include/dame.h
+        src/dame.cpp
 )
 
