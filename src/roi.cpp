@@ -1,4 +1,5 @@
 #include "roi.h"
+#include <iostream>
 
 roi::roi(int abs, int ord,int c,plateau& plt_){
     x=abs;
@@ -19,8 +20,8 @@ void roi::position(int& x_, int& y_) {
 
 int roi::seDeplacer(int xf, int yf, int c) { //on ne peut pas compiler si couleur ne sert à rien
 
-    if(xf-x > 1 || xf-x < -1 || yf-y > 1 || yf-y < -1) {
-        std::cout<<"Ce mouvement est illégal aux échecs, essayez autre chose" << std::endl;
+    if(xf-x > 1 || xf-x < -1 || yf-y > 1 || yf-y < -1 || xf > 8 || yf > 8) {
+        std::cout<<"Ce mouvement est illegal aux echecs, essayez autre chose" << std::endl;
         return 0;
     }
     else {
