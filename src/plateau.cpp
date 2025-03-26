@@ -2,7 +2,6 @@
 #include"plateau.h"
 
 
-
 plateau::plateau(){ //constructeur : tableau vierge
     plt = new int*[8];
     for(int i=0;i<8;i++)
@@ -28,6 +27,14 @@ bool plateau::estOccupe(int x, int y){
     return true;
   else
     return false;
+}
+
+void plateau::ajouterPiece(int x, int y,int c){
+	plt[x][y]=c; //idée : au lieu de faire 2 tableaux d'occupation, on met 1 pour noir, -1 pour blanc
+}
+
+void plateau::supprimerPiece(int x, int y){
+  plt[x][y]=0;
 }
 
 plateau::~plateau(){ //destructeur

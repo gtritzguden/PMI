@@ -1,14 +1,16 @@
 #pragma once
 #include <iostream>
-#include "pieces.h"
+#include "plateau.h"
 
 
-class tour : public pieces {
+class tour{
 private:
-	//rien pcq hérité de pieces
+	int x;
+    int y;
+    int c;
 
 public:
-    tour(int x, int y,int c);
+    tour(int x, int y,int ,plateau& plt_);
     void position(int& x_, int& y_);
     int seDeplacer(int xf, int yf, int c); /* Vérifier que le déplacement de la pièce ne met pas en échec le roi */
 };

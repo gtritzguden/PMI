@@ -153,30 +153,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/pieces.o: src/pieces.cpp.o
-.PHONY : src/pieces.o
-
-# target to build an object file
-src/pieces.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/pieces.cpp.o
-.PHONY : src/pieces.cpp.o
-
-src/pieces.i: src/pieces.cpp.i
-.PHONY : src/pieces.i
-
-# target to preprocess a source file
-src/pieces.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/pieces.cpp.i
-.PHONY : src/pieces.cpp.i
-
-src/pieces.s: src/pieces.cpp.s
-.PHONY : src/pieces.s
-
-# target to generate assembly for a file
-src/pieces.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/pieces.cpp.s
-.PHONY : src/pieces.cpp.s
-
 src/pion.o: src/pion.cpp.o
 .PHONY : src/pion.o
 
@@ -285,9 +261,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/pieces.o"
-	@echo "... src/pieces.i"
-	@echo "... src/pieces.s"
 	@echo "... src/pion.o"
 	@echo "... src/pion.i"
 	@echo "... src/pion.s"

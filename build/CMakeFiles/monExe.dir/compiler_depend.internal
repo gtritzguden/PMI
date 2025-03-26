@@ -3,11 +3,8 @@
 
 CMakeFiles/monExe.dir/src/main.cpp.o
  /home/guillaume/CLionProjects/PMI/src/main.cpp
- /home/guillaume/CLionProjects/PMI/include/pieces.h
  /home/guillaume/CLionProjects/PMI/include/pion.h
  /home/guillaume/CLionProjects/PMI/include/plateau.h
- /home/guillaume/CLionProjects/PMI/include/roi.h
- /home/guillaume/CLionProjects/PMI/include/tour.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -194,15 +191,8 @@ CMakeFiles/monExe.dir/src/main.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
-CMakeFiles/monExe.dir/src/pieces.cpp.o
- /home/guillaume/CLionProjects/PMI/src/pieces.cpp
- /home/guillaume/CLionProjects/PMI/include/pieces.h
- /home/guillaume/CLionProjects/PMI/include/plateau.h
- /usr/include/stdc-predef.h
-
 CMakeFiles/monExe.dir/src/pion.cpp.o
  /home/guillaume/CLionProjects/PMI/src/pion.cpp
- /home/guillaume/CLionProjects/PMI/include/pieces.h
  /home/guillaume/CLionProjects/PMI/include/pion.h
  /home/guillaume/CLionProjects/PMI/include/plateau.h
  /usr/include/alloca.h
@@ -582,7 +572,6 @@ CMakeFiles/monExe.dir/src/plateau.cpp.o
 
 CMakeFiles/monExe.dir/src/roi.cpp.o
  /home/guillaume/CLionProjects/PMI/src/roi.cpp
- /home/guillaume/CLionProjects/PMI/include/pieces.h
  /home/guillaume/CLionProjects/PMI/include/plateau.h
  /home/guillaume/CLionProjects/PMI/include/roi.h
  /usr/include/alloca.h
@@ -773,7 +762,6 @@ CMakeFiles/monExe.dir/src/roi.cpp.o
 
 CMakeFiles/monExe.dir/src/tour.cpp.o
  /home/guillaume/CLionProjects/PMI/src/tour.cpp
- /home/guillaume/CLionProjects/PMI/include/pieces.h
  /home/guillaume/CLionProjects/PMI/include/plateau.h
  /home/guillaume/CLionProjects/PMI/include/tour.h
  /usr/include/alloca.h

@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "/home/guillaume/CLionProjects/PMI/bin/monExe.pdb"
   "CMakeFiles/monExe.dir/src/main.cpp.o"
   "CMakeFiles/monExe.dir/src/main.cpp.o.d"
-  "CMakeFiles/monExe.dir/src/pieces.cpp.o"
-  "CMakeFiles/monExe.dir/src/pieces.cpp.o.d"
   "CMakeFiles/monExe.dir/src/pion.cpp.o"
   "CMakeFiles/monExe.dir/src/pion.cpp.o.d"
   "CMakeFiles/monExe.dir/src/plateau.cpp.o"

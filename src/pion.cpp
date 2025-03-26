@@ -1,9 +1,11 @@
 #include "pion.h"
-#include "pieces.h"
-#include "plateau.h"
-#include "roi.h" // servira quand on fera les conditions d'échec au roi
+#include <iostream> // servira quand on fera les conditions d'échec au roi
 
-pion::pion(int abs, int ord, int c) : pieces(abs, ord, c){
+pion::pion(int x_, int y_, int c_, plateau& plt_){
+  	x = x_;
+    y = y_;
+    c = c_;
+  	plt_.ajouterPiece(x_,y_,c_);
     char tab[8] = {'a','b','c','d','e','f','g','h'};
     std::cout<<"La piece pion a été cree en "<<tab[x-1]<<y<<std::endl;
 }
@@ -17,9 +19,11 @@ void pion::position(int& x_, int& y_) {
 }
 
 int pion::seDeplacer(int xf, int yf, int c, plateau& plt) {
-   if(reglesDeplacement(xf, yf, plt)){   // ajouter la mise en échec du roi
-     x=xf;
+   if(reglesDeplacement(xf, yf, plt)){// ajouter la mise en échec du roi
+     plt.supprimerPiece(x,y); //on supprime la pièce
+     x=xf; //on bouge la pièce
      y=yf;
+     plt.ajouterPiece(x,y,c); //on replace la pièce
      std::cout<<"la pièce a été déplacée en"<<x<<y<<std::endl;
    }
    else
