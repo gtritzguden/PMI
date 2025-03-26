@@ -7,7 +7,7 @@ pion::pion(int x_, int y_, int c_, plateau& plt_){
     c = c_;
   	plt_.ajouterPiece(x_,y_,c_);
     char tab[8] = {'a','b','c','d','e','f','g','h'};
-    std::cout<<"La piece pion a été cree en "<<tab[x-1]<<y<<std::endl;
+    std::cout<<"La piece pion a ete cree en "<<tab[x-1]<<y<<std::endl;
 }
 
 void pion::position(int& x_, int& y_) {
@@ -24,10 +24,10 @@ int pion::seDeplacer(int xf, int yf, int c, plateau& plt) {
      x=xf; //on bouge la pièce
      y=yf;
      plt.ajouterPiece(x,y,c); //on replace la pièce
-     std::cout<<"la pièce a été déplacée en"<<x<<y<<std::endl;
+     std::cout<<"la pièce a ete déplacee en"<<x<<y<<std::endl;
    }
    else
-     std::cout<<"Déplacement impossible"<<std::endl;
+     std::cout<<"Deplacement impossible"<<std::endl;
    return 0;
 }
 
