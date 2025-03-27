@@ -1,5 +1,6 @@
 #include<iostream>
 #include"plateau.h"
+#include"occupation.h"
 
 
 
@@ -23,14 +24,13 @@ void plateau::afficher() const{
   std::cout<<"---------------------"<<std::endl;
 }
 
-/*
-bool plateau::estOccupe(int x, int y){
-  if(strcmp(plt[x][y],"P")==0)
+
+bool plateau::estOccupe(int x, int y, const occupation& plt){
+  if(abs(plt[x][y])!=1)
     return true;
   else
     return false;
 }
-*/
 
 void plateau::ajouterPiece(int x, int y,int c){//c est la couleur mais aussi le type de la piece
   plt[x][y]=c;

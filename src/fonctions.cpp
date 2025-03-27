@@ -35,7 +35,6 @@ int underControl(const plateau& plt, int x, int y, int c) { //test diag, alentou
             }
             else if(piece==c*21||piece==c*22||piece==c*31||piece==c*32) { //piece est une tour ou une dame
                 danger=2;
-                break;
             }
             else if(piece==c*41 && i==1) {
                 danger=2;
@@ -51,7 +50,6 @@ int underControl(const plateau& plt, int x, int y, int c) { //test diag, alentou
             }
             else if(piece==c*21||piece==c*22||piece==c*31||piece==c*32) { //piece est une tour ou une dame
                 danger=2;
-                break;
             }
             else if(piece==c*41 && i==1) {
                 danger=2;
@@ -67,7 +65,6 @@ int underControl(const plateau& plt, int x, int y, int c) { //test diag, alentou
             }
             else if(piece==c*21||piece==c*22||piece==c*31||piece==c*32) { //piece est une tour ou une dame
                 danger=2;
-                break;
             }
             else if(piece==c*41 && i==1) {
                 danger=2;
@@ -83,7 +80,6 @@ int underControl(const plateau& plt, int x, int y, int c) { //test diag, alentou
             }
             else if(piece==c*21||piece==c*22||piece==c*31||piece==c*32) { //piece est une tour ou une dame
                 danger=2;
-                break;
             }
             else if(piece==c*41 && i==1) {
                 danger=2;

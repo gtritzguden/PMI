@@ -1,4 +1,5 @@
 #pragma once
+#include"occupation.h"
 
 class plateau {
     protected:
@@ -9,7 +10,7 @@ class plateau {
         void ajouterPiece(int x, int y, int c); //c designe la couleur et le type de piece
         void supprimerPiece(int x, int y); // pas bespin de couleur, on met juste 0;
         void afficher() const;
-		bool estOccupe(int x, int y); //renvoie true si la case est occupée, False si elel est libre
+		bool estOccupe(int x, int y, const occupation& plt); //renvoie true si la case est occupée, False si elel est libre
         int getElt(int x, int y) const;
         ~plateau();
 
