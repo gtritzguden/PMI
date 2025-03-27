@@ -1,4 +1,5 @@
 #include "roi.h"
+#include "fonctions.h"
 #include <iostream>
 
 roi::roi(int abs, int ord,int c_, plateau &plt){
@@ -37,9 +38,9 @@ int roi::seDeplacer(int xf, int yf, int c_,plateau& plt,occupation& plt_2) { //o
     }
 }
 
-bool roi::reglesDeplacement(int xf, int yf, plateau& plt_) {
+bool roi::reglesDeplacement(int xf, int yf, occupation& occ_) {
     if((0<=xf && xf<=7) && (0<=yf && yf<=7)){
-        if (estOccupe(xf, yf,plt_)) {
+        if (estOccupe(xf, yf,occ_)) {
           //insérer les règles de prise
               return false; //à changer en même temps qaue les règles
         }
