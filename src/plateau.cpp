@@ -32,7 +32,7 @@ bool plateau::estOccupe(int x, int y){
 }
 */
 
-void plateau::ajouterPiece(int x, int y,int c){
+void plateau::ajouterPiece(int x, int y,int c){//c est la couleur mais aussi le type de la piece
   plt[x][y]=c;
 }
 
