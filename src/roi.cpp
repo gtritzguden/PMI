@@ -54,11 +54,11 @@ bool roi::reglesDeplacement(int xf, int yf, occupation& occ_) {
 }
 
 
-bool roi::estEnEchec(occupation& plt,int x_, int y_) {
+bool roi::estEnEchec(occupation& occ_,int x_, int y_,plateau& plt_jeu) {
   int couleur;
   for (int i = 0; i < 8; i++) { //parcourt de tout le plateau
     for (int j = 0; j < 8; j++) { //idem
-      if((estOccupe(i,j,plt)) && (c != couleur) && (this->seDeplacer(x,y,c,plt))) {
+      if((estOccupe(i,j,occ_)) && (c != couleur) && (this->seDeplacer(x,y,c,plt_jeu,occ_))) {
           return true;
        } //Dans la fonction estOccupe il n'y a pas de couleur donc la condition est zarbi Guigui
   return false;

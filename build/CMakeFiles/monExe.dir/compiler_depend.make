@@ -874,6 +874,7 @@ CMakeFiles/monExe.dir/src/plateau.cpp.o: /home/guillaume/CLionProjects/PMI/src/p
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
 CMakeFiles/monExe.dir/src/roi.cpp.o: /home/guillaume/CLionProjects/PMI/src/roi.cpp \
+  /home/guillaume/CLionProjects/PMI/include/fonctions.h \
   /home/guillaume/CLionProjects/PMI/include/occupation.h \
   /home/guillaume/CLionProjects/PMI/include/plateau.h \
   /home/guillaume/CLionProjects/PMI/include/roi.h \
