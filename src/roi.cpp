@@ -18,17 +18,17 @@ void roi::position(int& x_, int& y_) {
 }
 
 
-int roi::seDeplacer(int xf, int yf, int c) { //on ne peut pas compiler si couleur ne sert à rien
+int roi::seDeplacer(int xf, int yf, int c, plateau &plt) { //on ne peut pas compiler si couleur ne sert à rien
 
-    if(reglesDeplacement(xf, yf, pltt)}){
-
-    }
+    if(reglesDeplacement(xf, yf, plt)){
         std::cout<<"Ce mouvement est illegal aux echecs, essayez autre chose" << std::endl;
         return 0;
     }
-    else {
+
+    else{
         x=xf;
         y=yf;
+        std::cout<<"Le roi se trouve en "<<xf<<yf<<std::endl;
         return 0;
     }
 }
@@ -55,7 +55,7 @@ bool roi::estEnEchec(plateau& plt,int x_, int y_) {
     for (int j = 0; j < 8; j++) { //idem
       if((plt.estOccupe(i,j,couleur)) && (c != couleur) && (this->seDeplacer(x,y,c))) {
           return true;
-       }
+       } //Dans la fonction estOccupe il n'y a pas de couleur donc la condition est zarbi Guigui
   return false;
        }
 

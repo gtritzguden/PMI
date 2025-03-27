@@ -5,7 +5,7 @@ pion::pion(int x_, int y_, int c_, plateau& plt_){
   	x = x_;
     y = y_;
     c = c_;
-  	plt_.ajouterPiece(x_,y_,c_,'P'); //le 'P' est pour l'affichage d'un pion
+  	plt_.ajouterPiece(x_,y_,c_); //le 'P' est pour l'affichage d'un pion
     char tab[8] = {'a','b','c','d','e','f','g','h'};
     std::cout<<"La piece pion a ete cree en "<<tab[x-1]<<y<<std::endl;
 }
@@ -23,7 +23,7 @@ bool pion::seDeplacer(int xf, int yf, int c, plateau& plt) {
      plt.supprimerPiece(x,y); //on supprime la pièce
      x=xf; //on bouge la pièce
      y=yf;
-     plt.ajouterPiece(x,y,c,'P'); //on replace la pièce
+     plt.ajouterPiece(x,y,c); //on replace la pièce
      std::cout<<"la piece a ete deplacee en"<<x<<y<<std::endl;
      return true;
    }
