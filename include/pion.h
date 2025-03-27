@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "plateau.h"
+#include"occupation.h"
 
 
 class pion{
