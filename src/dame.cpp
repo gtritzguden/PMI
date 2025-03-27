@@ -3,10 +3,11 @@
 #include "fonctions.h"
 #include <iostream>
 
-dame::dame(int abs, int ord,int c,plateau& plt_){
+dame::dame(int abs, int ord,int c_,plateau& plt_jeu){
     x=abs;
     y=ord;
-
+    c=c_;
+    plt_jeu.ajouterPiece(abs,ord,c_*31);
     char tab[8] = {'a','b','c','d','e','f','g','h'};
     std::cout<<"La piece dame a été cree en "<<tab[x-1]<<y<<std::endl;
 }

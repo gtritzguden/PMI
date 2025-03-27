@@ -17,5 +17,18 @@ int main(){
 //    p1.seDeplacer(1,1,1,P1); //déplacement invalide
 //    p1.seDeplacer(0,0,1,P1); //Déplacement invalide
 //    P1.afficher();
+
+    //test vraiment vite fait prcq il est tard
+
+    plateau P_jeu;
+    P_jeu.afficher();
+    pion P1(4,4,1,P_jeu);
+    P_jeu.afficher();
+
+    occupation occBlanc;
+    occBlanc.afficher();
+    occBlanc.maj(P_jeu,1);
+    occBlanc.afficher();
+
     return 0;
 }

@@ -2,8 +2,8 @@
 #include"plateau.h"
 
 class occupation : public plateau{
-  public:
-    int c; //precise la couleur pour laquelle le plateau d'occupation est crée
   private:
+    int c; //precise la couleur pour laquelle le plateau d'occupation est crée
+  public:
     void maj(const plateau& plt_ref, int c_);
 };
