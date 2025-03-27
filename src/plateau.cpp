@@ -25,13 +25,6 @@ void plateau::afficher() const{
 }
 
 
-bool plateau::estOccupe(int x, int y, const occupation& plt){
-  if(abs(plt[x][y])!=1)
-    return true;
-  else
-    return false;
-}
-
 void plateau::ajouterPiece(int x, int y,int c){//c est la couleur mais aussi le type de la piece
   plt[x][y]=c;
 }

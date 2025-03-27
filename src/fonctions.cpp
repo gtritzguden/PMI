@@ -92,6 +92,14 @@ int underControl(const plateau& plt, int x, int y, int c) { //test diag, alentou
 }
 
 
-double distance(int x1, int y1, int x2, int y2) { //donne la distance entre deux coordonnée
+double distance(int x1, int y1, int x2, int y2) { //donne la distance entre deux coordonnée, sert a rien pour l'instant
     return pow(pow(x1-x2,2)+pow(y1-y2,2),0.5);
+}
+
+
+bool estOccupe(int x, int y, const occupation& plt){ //renvoie true si la case est occupée, False si elel est libre
+    if(abs(plt[x][y])!=1)
+        return true;
+    else
+        return false;
 }
