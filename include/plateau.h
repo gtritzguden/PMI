@@ -1,5 +1,5 @@
 #pragma once
-#include"occupation.h"
+#include"fonctions.h"
 
 class plateau {
     protected:

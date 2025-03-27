@@ -1,5 +1,4 @@
 #include "roi.h"
-#include""
 #include <iostream>
 
 roi::roi(int abs, int ord,int c_, plateau &plt){
@@ -20,9 +19,9 @@ void roi::position(int& x_, int& y_) {
 }
 
 
-int roi::seDeplacer(int xf, int yf, int c_, plateau &plt) { //on ne peut pas compiler si couleur ne sert à rien
+int roi::seDeplacer(int xf, int yf, int c_, occupation& plt_2) { //on ne peut pas compiler si couleur ne sert à rien
 
-    if(reglesDeplacement(xf, yf, plt)){
+    if(reglesDeplacement(xf, yf, plt_2)){
         std::cout<<"Ce mouvement est illegal aux echecs, essayez autre chose" << std::endl;
         return 0;
     }
@@ -38,7 +37,7 @@ int roi::seDeplacer(int xf, int yf, int c_, plateau &plt) { //on ne peut pas com
 
 bool roi::reglesDeplacement(int xf, int yf, plateau& plt_) {
     if((0<=xf && xf<=7) && (0<=yf && yf<=7)){
-        if (plt_.estOccupe(xf, yf)) {
+        if (estOccupe(xf, yf,plt_)) {
           //insérer les règles de prise
               return false; //à changer en même temps qaue les règles
         }
@@ -52,11 +51,11 @@ bool roi::reglesDeplacement(int xf, int yf, plateau& plt_) {
 }
 
 
-bool roi::estEnEchec(plateau& plt,int x_, int y_) {
+bool roi::estEnEchec(occupation& plt,int x_, int y_) {
   int couleur;
   for (int i = 0; i < 8; i++) { //parcourt de tout le plateau
     for (int j = 0; j < 8; j++) { //idem
-      if((plt.estOccupe(i,j)) && (c != couleur) && (this->seDeplacer(x,y,c,plt))) {
+      if((estOccupe(i,j,plt)) && (c != couleur) && (this->seDeplacer(x,y,c,plt))) {
           return true;
        } //Dans la fonction estOccupe il n'y a pas de couleur donc la condition est zarbi Guigui
   return false;
