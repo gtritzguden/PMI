@@ -3,7 +3,11 @@
 #include <iostream>
 
 
-tour::tour(int abs, int ord, int c, plateau& plt_){
+tour::tour(int abs, int ord, int c_, plateau& plt_){
+    x = abs;
+    y=ord;
+    c=c_;
+
     char tab[8] = {'a','b','c','d','e','f','g','h'};
     std::cout<<"La piece pion a été cree en "<<tab[x-1]<<y<<std::endl;
 }

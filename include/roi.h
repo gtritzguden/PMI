@@ -7,7 +7,7 @@ private :
 
   	int x;
     int y;
-    int c;
+    int c; //type et couleur de la pièce
 
   public:
     roi(int x, int y,int c, plateau& plt_);
