@@ -1,5 +1,6 @@
 #include "dame.h"
 #include "tour.h"
+#include "fonction.h"
 #include <iostream>
 
 dame::dame(int abs, int ord,int c,plateau& plt_){
@@ -34,14 +35,14 @@ int dame::seDeplacer(int xf, int yf, int c, plateau &plt, tour &t) { //on ne peu
 
     else if(deplacementTour){
         for(int i=x ; i<xf ; i++) { //Boucle pour vérifier qu'il n'y a aucune pièce entre x et xf
-            if(plt.estOccupe(i,y)) {
+            if(estOccupe(i,y,plt)) {
                 std::cout << "Vous ne pouvez pas passer par dessus une piece, veuillez recommencer"<< std::endl;
                 return 0;
             }
         }
 
         for(int k=y ; k<yf ; k++) { //Boucle pour vérifier qu'il n'y a aucune pièce entre y et yf
-            if(plt.estOccupe(x,k)) {
+            if(estOccupe(x,k,plt)) {
                 std::cout << "Vous ne pouvez pas passer par dessus une piece, veuillez recommencer"<< std::endl;
                 return 0;
             }
@@ -55,7 +56,7 @@ int dame::seDeplacer(int xf, int yf, int c, plateau &plt, tour &t) { //on ne peu
     else if(diagonale){
         for(int i=x ; i<xf ; i++) { //Boucle pour vérifier qu'il n'y a aucune pièce sur la diagonale sur laquelle la dame se déplace entre son point de départ et son point d'arrivé
             for(int k=y ; k<yf ; k++)
-                if(plt.estOccupe(i,k)) {
+                if(estOccupe(i,k,plt)) {
                     std::cout << "Vous ne pouvez pas passer par dessus un pion, veuillez recommencer"<< std::endl;
                     return 0;
             }
