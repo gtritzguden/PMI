@@ -37,5 +37,7 @@ add_executable(
    ${srcFiles}
         include/dame.h
         src/dame.cpp
+        src/NicoFonction.cpp
+        include/NicoFonction.h
 )
 
