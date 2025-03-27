@@ -1,6 +1,6 @@
 #include "dame.h"
 #include "tour.h"
-#include "fonction.h"
+#include "fonctions.h"
 #include <iostream>
 
 dame::dame(int abs, int ord,int c,plateau& plt_){
