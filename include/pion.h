@@ -7,7 +7,7 @@ class pion{
  	private :
          int x;
          int y;
-         int c;
+         int c; //type et couleur de la pièce
 
 	public:
     	pion(int x_, int y_, int c_, plateau& plt_);

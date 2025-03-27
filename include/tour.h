@@ -7,7 +7,7 @@ class tour{
 private:
 	int x;
     int y;
-    int c;
+    int c; //type et couleur de la pièce
 
 public:
     tour(int x, int y,int ,plateau& plt_);
