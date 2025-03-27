@@ -1,4 +1,6 @@
 #include "pion.h"
+#include "fonctions.h"
+
 #include <iostream> // servira quand on fera les conditions d'échec au roi
 
 pion::pion(int x_, int y_, int c_, plateau& plt_){
@@ -18,8 +20,8 @@ void pion::position(int& x_, int& y_) {
 
 }
 
-bool pion::seDeplacer(int xf, int yf, int c, plateau& plt) {
-   if(reglesDeplacement(xf, yf, plt)){// ajouter la mise en échec du roi
+bool pion::seDeplacer(int xf, int yf, int c, plateau& plt,occupation& occ_) {
+   if(reglesDeplacement(xf, yf, occ_)){// ajouter la mise en échec du roi
      plt.supprimerPiece(x,y); //on supprime la pièce
      x=xf; //on bouge la pièce
      y=yf;
@@ -33,9 +35,9 @@ bool pion::seDeplacer(int xf, int yf, int c, plateau& plt) {
     }
 }
 
-bool pion::reglesDeplacement(int xf, int yf, plateau& plt_) { //xf et yf les abscisses finales du pion
+bool pion::reglesDeplacement(int xf, int yf, occupation& occ_) { //xf et yf les abscisses finales du pion
   if((0<=xf && xf<=7) && (0<=yf && yf<=7)){
-    if (plt_.estOccupe(xf, yf)) {
+    if (estOccupe(xf,yf,occ_)) {
       //insérer les règles de prise
       return false; //à changer en même temps qaue les règles
     }

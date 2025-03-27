@@ -98,7 +98,7 @@ double distance(int x1, int y1, int x2, int y2) { //donne la distance entre deux
 
 
 bool estOccupe(int x, int y, const occupation& plt){ //renvoie true si la case est occupée, False si elel est libre
-    if(abs(plt[x][y])!=1)
+    if(abs(plt.getElt(x,y)!=1))
         return true;
     else
         return false;
