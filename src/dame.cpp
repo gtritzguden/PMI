@@ -20,7 +20,7 @@ void dame::position(int& x_, int& y_) {
 }
 
 
-int dame::seDeplacer(int xf, int yf, int c, plateau &plt, tour &t) { //on ne peut pas compiler si couleur ne sert à rien
+int dame::seDeplacer(int xf, int yf, int c,plateau& plt_jeu, occupation &plt_occupation, tour &t) { //on ne peut pas compiler si couleur ne sert à rien
 
     bool diagonale = abs(xf - x) == abs(yf - y);
     bool deplacementTour = (xf != 0 && yf == 0) || (xf == 0 && yf != 0);
@@ -35,20 +35,20 @@ int dame::seDeplacer(int xf, int yf, int c, plateau &plt, tour &t) { //on ne peu
 
     else if(deplacementTour){
         for(int i=x ; i<xf ; i++) { //Boucle pour vérifier qu'il n'y a aucune pièce entre x et xf
-            if(estOccupe(i,y,plt)) {
+            if(estOccupe(i,y,plt_occupation)) {
                 std::cout << "Vous ne pouvez pas passer par dessus une piece, veuillez recommencer"<< std::endl;
                 return 0;
             }
         }
 
         for(int k=y ; k<yf ; k++) { //Boucle pour vérifier qu'il n'y a aucune pièce entre y et yf
-            if(estOccupe(x,k,plt)) {
+            if(estOccupe(x,k,plt_occupation)) {
                 std::cout << "Vous ne pouvez pas passer par dessus une piece, veuillez recommencer"<< std::endl;
                 return 0;
             }
         }
 
-        t.seDeplacer(xf,yf,c,plt);
+        t.seDeplacer(xf,yf,c,plt_jeu);
         return 1;
     }
 
@@ -56,7 +56,7 @@ int dame::seDeplacer(int xf, int yf, int c, plateau &plt, tour &t) { //on ne peu
     else if(diagonale){
         for(int i=x ; i<xf ; i++) { //Boucle pour vérifier qu'il n'y a aucune pièce sur la diagonale sur laquelle la dame se déplace entre son point de départ et son point d'arrivé
             for(int k=y ; k<yf ; k++)
-                if(estOccupe(i,k,plt)) {
+                if(estOccupe(i,k,plt_occupation)) {
                     std::cout << "Vous ne pouvez pas passer par dessus un pion, veuillez recommencer"<< std::endl;
                     return 0;
             }
