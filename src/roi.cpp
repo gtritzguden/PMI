@@ -19,7 +19,7 @@ void roi::position(int& x_, int& y_) {
 }
 
 
-int roi::seDeplacer(int xf, int yf, int c_, occupation& plt_2) { //on ne peut pas compiler si couleur ne sert à rien
+int roi::seDeplacer(int xf, int yf, int c_,plateau& plt,occupation& plt_2) { //on ne peut pas compiler si couleur ne sert à rien
 
     if(reglesDeplacement(xf, yf, plt_2)){
         std::cout<<"Ce mouvement est illegal aux echecs, essayez autre chose" << std::endl;
@@ -27,8 +27,10 @@ int roi::seDeplacer(int xf, int yf, int c_, occupation& plt_2) { //on ne peut pa
     }
 
     else{
+        plt.supprimerPiece(x,y);
         x=xf;
         y=yf;
+        plt.ajouterPiece(x,y,c);
         char t[8] = {'a','b','c','d','e','f','g','h'};
         std::cout<<"Le roi se trouve en "<<t[xf-1]<<yf<<std::endl;
         return 0;
