@@ -1,4 +1,7 @@
 #include "tour.h"
+
+#include <fonctions.h>
+
 #include "plateau.h"
 #include <iostream>
 
@@ -21,20 +24,20 @@ void tour::position(int& x_, int& y_) {
 }
 
 
-int tour::seDeplacer(int xf, int yf, int c, plateau &plt) {
+int tour::seDeplacer(int xf, int yf, int c, plateau &plt_jeu, occupation& plt_occupation) {
     bool deplacementValide = (xf != 0 && yf == 0) || (xf == 0 && yf != 0);
 
     bool dansLesBornes = xf >= 1 && xf <= 8 && yf >= 1 && yf <= 8;
 
     for(int i=x ; i<xf ; i++) {
-        if(plt.estOccupe(i,y)) {
+        if(estOccupe(i,y,plt_occupation)) {
             std::cout << "Vous ne pouvez pas passer par dessus un pion, veuillez recommencer"<< std::endl;
             return 0;
         }
     }
 
     for(int k=y ; k<yf ; k++) {
-        if(plt.estOccupe(x,k)) {
+        if(estOccupe(x,k,plt_occupation)) {
             std::cout << "Vous ne pouvez pas passer par dessus un pion, veuillez recommencer"<< std::endl;
             return 0;
         }
