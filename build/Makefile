@@ -129,6 +129,78 @@ monExe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/build
 .PHONY : monExe/fast
 
+src/NicoFonction.o: src/NicoFonction.cpp.o
+.PHONY : src/NicoFonction.o
+
+# target to build an object file
+src/NicoFonction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/NicoFonction.cpp.o
+.PHONY : src/NicoFonction.cpp.o
+
+src/NicoFonction.i: src/NicoFonction.cpp.i
+.PHONY : src/NicoFonction.i
+
+# target to preprocess a source file
+src/NicoFonction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/NicoFonction.cpp.i
+.PHONY : src/NicoFonction.cpp.i
+
+src/NicoFonction.s: src/NicoFonction.cpp.s
+.PHONY : src/NicoFonction.s
+
+# target to generate assembly for a file
+src/NicoFonction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/NicoFonction.cpp.s
+.PHONY : src/NicoFonction.cpp.s
+
+src/dame.o: src/dame.cpp.o
+.PHONY : src/dame.o
+
+# target to build an object file
+src/dame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/dame.cpp.o
+.PHONY : src/dame.cpp.o
+
+src/dame.i: src/dame.cpp.i
+.PHONY : src/dame.i
+
+# target to preprocess a source file
+src/dame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/dame.cpp.i
+.PHONY : src/dame.cpp.i
+
+src/dame.s: src/dame.cpp.s
+.PHONY : src/dame.s
+
+# target to generate assembly for a file
+src/dame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/dame.cpp.s
+.PHONY : src/dame.cpp.s
+
+src/fonctions.o: src/fonctions.cpp.o
+.PHONY : src/fonctions.o
+
+# target to build an object file
+src/fonctions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/fonctions.cpp.o
+.PHONY : src/fonctions.cpp.o
+
+src/fonctions.i: src/fonctions.cpp.i
+.PHONY : src/fonctions.i
+
+# target to preprocess a source file
+src/fonctions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/fonctions.cpp.i
+.PHONY : src/fonctions.cpp.i
+
+src/fonctions.s: src/fonctions.cpp.s
+.PHONY : src/fonctions.s
+
+# target to generate assembly for a file
+src/fonctions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/fonctions.cpp.s
+.PHONY : src/fonctions.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -152,6 +224,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/occupation.o: src/occupation.cpp.o
+.PHONY : src/occupation.o
+
+# target to build an object file
+src/occupation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/occupation.cpp.o
+.PHONY : src/occupation.cpp.o
+
+src/occupation.i: src/occupation.cpp.i
+.PHONY : src/occupation.i
+
+# target to preprocess a source file
+src/occupation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/occupation.cpp.i
+.PHONY : src/occupation.cpp.i
+
+src/occupation.s: src/occupation.cpp.s
+.PHONY : src/occupation.s
+
+# target to generate assembly for a file
+src/occupation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monExe.dir/build.make CMakeFiles/monExe.dir/src/occupation.cpp.s
+.PHONY : src/occupation.cpp.s
 
 src/pion.o: src/pion.cpp.o
 .PHONY : src/pion.o
@@ -258,9 +354,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... monExe"
+	@echo "... src/NicoFonction.o"
+	@echo "... src/NicoFonction.i"
+	@echo "... src/NicoFonction.s"
+	@echo "... src/dame.o"
+	@echo "... src/dame.i"
+	@echo "... src/dame.s"
+	@echo "... src/fonctions.o"
+	@echo "... src/fonctions.i"
+	@echo "... src/fonctions.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/occupation.o"
+	@echo "... src/occupation.i"
+	@echo "... src/occupation.s"
 	@echo "... src/pion.o"
 	@echo "... src/pion.i"
 	@echo "... src/pion.s"

@@ -69,10 +69,52 @@ include CMakeFiles/monExe.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/monExe.dir/flags.make
 
+CMakeFiles/monExe.dir/src/NicoFonction.cpp.o: CMakeFiles/monExe.dir/flags.make
+CMakeFiles/monExe.dir/src/NicoFonction.cpp.o: /home/guillaume/CLionProjects/PMI/src/NicoFonction.cpp
+CMakeFiles/monExe.dir/src/NicoFonction.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/monExe.dir/src/NicoFonction.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/NicoFonction.cpp.o -MF CMakeFiles/monExe.dir/src/NicoFonction.cpp.o.d -o CMakeFiles/monExe.dir/src/NicoFonction.cpp.o -c /home/guillaume/CLionProjects/PMI/src/NicoFonction.cpp
+
+CMakeFiles/monExe.dir/src/NicoFonction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/monExe.dir/src/NicoFonction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillaume/CLionProjects/PMI/src/NicoFonction.cpp > CMakeFiles/monExe.dir/src/NicoFonction.cpp.i
+
+CMakeFiles/monExe.dir/src/NicoFonction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/monExe.dir/src/NicoFonction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillaume/CLionProjects/PMI/src/NicoFonction.cpp -o CMakeFiles/monExe.dir/src/NicoFonction.cpp.s
+
+CMakeFiles/monExe.dir/src/dame.cpp.o: CMakeFiles/monExe.dir/flags.make
+CMakeFiles/monExe.dir/src/dame.cpp.o: /home/guillaume/CLionProjects/PMI/src/dame.cpp
+CMakeFiles/monExe.dir/src/dame.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/monExe.dir/src/dame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/dame.cpp.o -MF CMakeFiles/monExe.dir/src/dame.cpp.o.d -o CMakeFiles/monExe.dir/src/dame.cpp.o -c /home/guillaume/CLionProjects/PMI/src/dame.cpp
+
+CMakeFiles/monExe.dir/src/dame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/monExe.dir/src/dame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillaume/CLionProjects/PMI/src/dame.cpp > CMakeFiles/monExe.dir/src/dame.cpp.i
+
+CMakeFiles/monExe.dir/src/dame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/monExe.dir/src/dame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillaume/CLionProjects/PMI/src/dame.cpp -o CMakeFiles/monExe.dir/src/dame.cpp.s
+
+CMakeFiles/monExe.dir/src/fonctions.cpp.o: CMakeFiles/monExe.dir/flags.make
+CMakeFiles/monExe.dir/src/fonctions.cpp.o: /home/guillaume/CLionProjects/PMI/src/fonctions.cpp
+CMakeFiles/monExe.dir/src/fonctions.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/monExe.dir/src/fonctions.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/fonctions.cpp.o -MF CMakeFiles/monExe.dir/src/fonctions.cpp.o.d -o CMakeFiles/monExe.dir/src/fonctions.cpp.o -c /home/guillaume/CLionProjects/PMI/src/fonctions.cpp
+
+CMakeFiles/monExe.dir/src/fonctions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/monExe.dir/src/fonctions.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillaume/CLionProjects/PMI/src/fonctions.cpp > CMakeFiles/monExe.dir/src/fonctions.cpp.i
+
+CMakeFiles/monExe.dir/src/fonctions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/monExe.dir/src/fonctions.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillaume/CLionProjects/PMI/src/fonctions.cpp -o CMakeFiles/monExe.dir/src/fonctions.cpp.s
+
 CMakeFiles/monExe.dir/src/main.cpp.o: CMakeFiles/monExe.dir/flags.make
 CMakeFiles/monExe.dir/src/main.cpp.o: /home/guillaume/CLionProjects/PMI/src/main.cpp
 CMakeFiles/monExe.dir/src/main.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/monExe.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/monExe.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/main.cpp.o -MF CMakeFiles/monExe.dir/src/main.cpp.o.d -o CMakeFiles/monExe.dir/src/main.cpp.o -c /home/guillaume/CLionProjects/PMI/src/main.cpp
 
 CMakeFiles/monExe.dir/src/main.cpp.i: cmake_force
@@ -83,10 +125,24 @@ CMakeFiles/monExe.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/monExe.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillaume/CLionProjects/PMI/src/main.cpp -o CMakeFiles/monExe.dir/src/main.cpp.s
 
+CMakeFiles/monExe.dir/src/occupation.cpp.o: CMakeFiles/monExe.dir/flags.make
+CMakeFiles/monExe.dir/src/occupation.cpp.o: /home/guillaume/CLionProjects/PMI/src/occupation.cpp
+CMakeFiles/monExe.dir/src/occupation.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/monExe.dir/src/occupation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/occupation.cpp.o -MF CMakeFiles/monExe.dir/src/occupation.cpp.o.d -o CMakeFiles/monExe.dir/src/occupation.cpp.o -c /home/guillaume/CLionProjects/PMI/src/occupation.cpp
+
+CMakeFiles/monExe.dir/src/occupation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/monExe.dir/src/occupation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guillaume/CLionProjects/PMI/src/occupation.cpp > CMakeFiles/monExe.dir/src/occupation.cpp.i
+
+CMakeFiles/monExe.dir/src/occupation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/monExe.dir/src/occupation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guillaume/CLionProjects/PMI/src/occupation.cpp -o CMakeFiles/monExe.dir/src/occupation.cpp.s
+
 CMakeFiles/monExe.dir/src/pion.cpp.o: CMakeFiles/monExe.dir/flags.make
 CMakeFiles/monExe.dir/src/pion.cpp.o: /home/guillaume/CLionProjects/PMI/src/pion.cpp
 CMakeFiles/monExe.dir/src/pion.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/monExe.dir/src/pion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/monExe.dir/src/pion.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/pion.cpp.o -MF CMakeFiles/monExe.dir/src/pion.cpp.o.d -o CMakeFiles/monExe.dir/src/pion.cpp.o -c /home/guillaume/CLionProjects/PMI/src/pion.cpp
 
 CMakeFiles/monExe.dir/src/pion.cpp.i: cmake_force
@@ -100,7 +156,7 @@ CMakeFiles/monExe.dir/src/pion.cpp.s: cmake_force
 CMakeFiles/monExe.dir/src/plateau.cpp.o: CMakeFiles/monExe.dir/flags.make
 CMakeFiles/monExe.dir/src/plateau.cpp.o: /home/guillaume/CLionProjects/PMI/src/plateau.cpp
 CMakeFiles/monExe.dir/src/plateau.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/monExe.dir/src/plateau.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/monExe.dir/src/plateau.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/plateau.cpp.o -MF CMakeFiles/monExe.dir/src/plateau.cpp.o.d -o CMakeFiles/monExe.dir/src/plateau.cpp.o -c /home/guillaume/CLionProjects/PMI/src/plateau.cpp
 
 CMakeFiles/monExe.dir/src/plateau.cpp.i: cmake_force
@@ -114,7 +170,7 @@ CMakeFiles/monExe.dir/src/plateau.cpp.s: cmake_force
 CMakeFiles/monExe.dir/src/roi.cpp.o: CMakeFiles/monExe.dir/flags.make
 CMakeFiles/monExe.dir/src/roi.cpp.o: /home/guillaume/CLionProjects/PMI/src/roi.cpp
 CMakeFiles/monExe.dir/src/roi.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/monExe.dir/src/roi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/monExe.dir/src/roi.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/roi.cpp.o -MF CMakeFiles/monExe.dir/src/roi.cpp.o.d -o CMakeFiles/monExe.dir/src/roi.cpp.o -c /home/guillaume/CLionProjects/PMI/src/roi.cpp
 
 CMakeFiles/monExe.dir/src/roi.cpp.i: cmake_force
@@ -128,7 +184,7 @@ CMakeFiles/monExe.dir/src/roi.cpp.s: cmake_force
 CMakeFiles/monExe.dir/src/tour.cpp.o: CMakeFiles/monExe.dir/flags.make
 CMakeFiles/monExe.dir/src/tour.cpp.o: /home/guillaume/CLionProjects/PMI/src/tour.cpp
 CMakeFiles/monExe.dir/src/tour.cpp.o: CMakeFiles/monExe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/monExe.dir/src/tour.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/monExe.dir/src/tour.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/monExe.dir/src/tour.cpp.o -MF CMakeFiles/monExe.dir/src/tour.cpp.o.d -o CMakeFiles/monExe.dir/src/tour.cpp.o -c /home/guillaume/CLionProjects/PMI/src/tour.cpp
 
 CMakeFiles/monExe.dir/src/tour.cpp.i: cmake_force
@@ -141,7 +197,11 @@ CMakeFiles/monExe.dir/src/tour.cpp.s: cmake_force
 
 # Object files for target monExe
 monExe_OBJECTS = \
+"CMakeFiles/monExe.dir/src/NicoFonction.cpp.o" \
+"CMakeFiles/monExe.dir/src/dame.cpp.o" \
+"CMakeFiles/monExe.dir/src/fonctions.cpp.o" \
 "CMakeFiles/monExe.dir/src/main.cpp.o" \
+"CMakeFiles/monExe.dir/src/occupation.cpp.o" \
 "CMakeFiles/monExe.dir/src/pion.cpp.o" \
 "CMakeFiles/monExe.dir/src/plateau.cpp.o" \
 "CMakeFiles/monExe.dir/src/roi.cpp.o" \
@@ -150,14 +210,18 @@ monExe_OBJECTS = \
 # External object files for target monExe
 monExe_EXTERNAL_OBJECTS =
 
+/home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/NicoFonction.cpp.o
+/home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/dame.cpp.o
+/home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/fonctions.cpp.o
 /home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/main.cpp.o
+/home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/occupation.cpp.o
 /home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/pion.cpp.o
 /home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/plateau.cpp.o
 /home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/roi.cpp.o
 /home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/src/tour.cpp.o
 /home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/build.make
 /home/guillaume/CLionProjects/PMI/bin/monExe: CMakeFiles/monExe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable /home/guillaume/CLionProjects/PMI/bin/monExe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/guillaume/CLionProjects/PMI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable /home/guillaume/CLionProjects/PMI/bin/monExe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monExe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
