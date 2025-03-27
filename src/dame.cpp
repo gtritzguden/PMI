@@ -48,7 +48,7 @@ int dame::seDeplacer(int xf, int yf, int c,plateau& plt_jeu, occupation &plt_occ
             }
         }
 
-        t.seDeplacer(xf,yf,c,plt_jeu);
+        t.seDeplacer(xf,yf,c,plt_jeu,plt_occupation);
         return 1;
     }
 
