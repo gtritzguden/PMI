@@ -7,6 +7,6 @@ class occupation : public plateau{
   public:
     void maj(const plateau& plt_ref, int c_);
     void afficher();
-    occupation();
+    occupation(int c_);
 };
 

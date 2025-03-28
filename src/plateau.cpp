@@ -39,8 +39,8 @@ int plateau::getElt(int x, int y) const {
 
 plateau::~plateau(){ //destructeur
   for(int i=0;i<8;i++){
-    delete plt[i];
+    delete[] plt[i];
   }
-  delete plt;
+  delete[] plt;
 }
 

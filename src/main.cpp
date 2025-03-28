@@ -23,10 +23,10 @@ int main(){
     plateau P_jeu;
     P_jeu.afficher();
     pion P1(4,4,-11,P_jeu);
-    tour T1(2,2,-21,P_jeu);
+//    tour T1(2,2,-21,P_jeu);
     P_jeu.afficher();
 
-    occupation occBlanc;
+    occupation occBlanc(1);
     occBlanc.afficher();
     occBlanc.maj(P_jeu,1);
     occBlanc.afficher();
