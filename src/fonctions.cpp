@@ -11,7 +11,7 @@ int sign(int e){
     }
     return 1;
 }
-
+/*
 int underControl(const plateau& plt, int x, int y, int c) { //test diag, alentour, mm colonne et mm ligne, prend plateau de jeu
     // c fait reference a la couleur du plateau d'occupation
     // on remplie le plateau d'occupation blanc -> c=1
@@ -106,7 +106,7 @@ int underControl(const plateau& plt, int x, int y, int c) { //test diag, alentou
     return danger;
 
 }
-
+*/
 
 double distance(int x1, int y1, int x2, int y2) { //donne la distance entre deux coordonnée, sert a rien pour l'instant
     return pow(pow(x1-x2,2)+pow(y1-y2,2),0.5);

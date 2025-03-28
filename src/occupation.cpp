@@ -1,11 +1,11 @@
 #include "occupation.h"
-
+#include"NicoFonction.h"
 #include <iostream>
 #include <ostream>
 
 #include "fonctions.h"
 
-void occupation::maj(const plateau& plt_ref, int c_)
+void occupation::maj(plateau& plt_ref, int c_) //remettre const
     {
       for(int i = 0; i<8;i++){
         for (int j = 0; j<8;j++){
