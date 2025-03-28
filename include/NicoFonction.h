@@ -1,8 +1,8 @@
-////
-//// Created by nicol on 27/03/2025.
-////
-//
-//#ifndef NICOFONCTION_H
-//#define NICOFONCTION_H
-//
-//#endif //NICOFONCTION_H
+#pragma once
+#include "plateau.h"
+
+bool estUneTourBlanche(int x, int y, plateau &plt);
+bool estUneTourNoire(int x, int y, plateau &plt);
+bool estUneDameBlanche(int x, int y, plateau &plt);
+bool estUneDameNoire(int x, int y, plateau &plt);
+bool underControl(int x, int y, int c, plateau &plt);
