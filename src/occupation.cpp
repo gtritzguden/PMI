@@ -20,3 +20,7 @@ void occupation::afficher() {
     std::cout<<"plateau occupation des "<<c<<std::endl;
     std::cout<<"---------------------"<<std::endl;
 }
+
+occupation::occupation(int c_) : plateau() {
+    c=c_;
+}
