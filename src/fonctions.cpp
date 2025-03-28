@@ -1,7 +1,8 @@
 #include"fonctions.h"
 
 #include <cmath>
-
+#include <iostream>
+#include <ostream>
 
 
 int sign(int e){
@@ -27,6 +28,7 @@ int underControl(const plateau& plt, int x, int y, int c) { //test diag, alentou
     //parcours de la ligne
     for (int i=1;i<dist_gauche;i++) { //vers la gauche
         int piece=plt.getElt(x,y-i); //on recupere la piece a cette position
+        std::cout<<piece<<std::endl;
         if (piece!=0) {
             //detection d'une piece
             if ((10<abs(piece))&&(abs(piece)<19)) {//la piece est un pion noir ou blanc

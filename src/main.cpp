@@ -1,6 +1,6 @@
 #include"plateau.h"
 #include "pion.h"
-//#include "tour.h"
+#include "tour.h"
 //#include "roi.h"
 
 #include <stdio.h>
@@ -22,7 +22,8 @@ int main(){
 
     plateau P_jeu;
     P_jeu.afficher();
-    pion P1(4,4,1,P_jeu);
+    pion P1(4,4,-11,P_jeu);
+    tour T1(2,2,-21,P_jeu);
     P_jeu.afficher();
 
     occupation occBlanc;
